@@ -24,4 +24,17 @@ public class Monster : MonoBehaviour
     }
 
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Laser"))
+        {
+
+
+            Destroy(gameObject);
+
+
+        }
+    }
+
 } // class

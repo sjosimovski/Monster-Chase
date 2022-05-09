@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameplayUIController : MonoBehaviour
 {
+
+    public bool shootTrue;       
+
+
     public void RestartGame() // function for restart
     {
 
@@ -15,6 +19,12 @@ public class GameplayUIController : MonoBehaviour
     public void HomeButton() // function for home screen
     {
         SceneManager.LoadScene("MainMenu");
+
+    }
+
+    public void ShootButton() // function for shooting button
+    {
+        shootTrue = true;
 
     }
 
