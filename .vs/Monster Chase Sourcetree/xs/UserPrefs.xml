@@ -2,14 +2,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="43" Column="30" />
-      <File FileName="Assets/Scripts/GameOver.cs" Line="91" Column="49" />
-      <File FileName="Assets/Scripts/Player.cs" Line="142" Column="22" />
+      <File FileName="Assets/Scripts/Player.cs" Line="182" Column="6" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="37" Column="9" />
       <File FileName="Assets/Scripts/Monster.cs" Line="35" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6d5f37f8-d325-4462-82a6-0f3b77d2528c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1ad334c8-bba8-4547-96e5-4537267589ae" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -25,6 +25,7 @@ public class GameOver : MonoBehaviour
 
     private int remainingDuration;
 
+    private Vector3 laserVector;
 
 
 
@@ -33,6 +34,7 @@ public class GameOver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
 
         laser = FindObjectOfType<Laser>();
 

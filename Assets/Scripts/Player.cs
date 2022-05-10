@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
 
     public Collector collector;
 
+    public bool facingRight = true;
+
    // public GameObject gameOverScreen; // adding a game object for popup
    // private string popUpObjectName = "GameOverPopup"; // name of object
 
@@ -63,11 +65,12 @@ public class Player : MonoBehaviour
         playerMoveKeyboard();
         animatePlayer();
         playerJump();
+        moveTest();
 
-
-       
 
         
+
+
     }
 
     private void ForceUpdate()
@@ -84,9 +87,8 @@ public class Player : MonoBehaviour
 
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
 
+        
 
-
-      
     }
 
     void moveJoystick()
@@ -110,24 +112,34 @@ public class Player : MonoBehaviour
 
     void animatePlayer()
     {
+
         // going right
-        if (movementX > 0 || move > 0)
+        if (move > 0 )
         {
-            sr.flipX = false;
+            // sr.flipX = false;
+            //Flip();
+
             anim.SetBool(WALK_ANIMATION, true);
             
         }
         // going left
-        else if (movementX < 0 || move < 0)
+        else if (move < 0 )
         {
-            sr.flipX = true;
+            // sr.flipX = true;
+
+            // Flip();
+
+            
             anim.SetBool(WALK_ANIMATION, true);
-           
+            
+
         }
         else
         {
             anim.SetBool(WALK_ANIMATION, false);
         }
+
+       
     }
 
     void playerJump() {
@@ -160,8 +172,30 @@ public class Player : MonoBehaviour
             
         }
     }
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+    }
 
-   
+    private void moveTest()
+    {
+        
+
+        if (move > 0  && !facingRight)
+        {
+            Flip();
+            
+
+        }
+        else if (move < 0 && facingRight)
+        {
+            Flip();
+            
+        }
+        
+    }
+
 
 
 
